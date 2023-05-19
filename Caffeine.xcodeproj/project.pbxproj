@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AA2A17B93700CF7172 /* SearchBarView.swift */; };
+		480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */; };
 		FE32D9622A0FCB76001C88FB /* CaffeineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32D9612A0FCB76001C88FB /* CaffeineApp.swift */; };
 		FE32D9642A0FCB76001C88FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32D9632A0FCB76001C88FB /* ContentView.swift */; };
 		FE32D9662A0FCB79001C88FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE32D9652A0FCB79001C88FB /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		480C73AA2A17B93700CF7172 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		FE32D95E2A0FCB76001C88FB /* Caffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE32D9612A0FCB76001C88FB /* CaffeineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineApp.swift; sourceTree = "<group>"; };
 		FE32D9632A0FCB76001C88FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				FE32D9742A0FCC35001C88FB /* AssetSearchView.swift */,
 				480C73AA2A17B93700CF7172 /* SearchBarView.swift */,
+				480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */,
 			);
 			path = AssetSearchView;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */,
 				480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */,
 				FE32D9732A0FCC2C001C88FB /* HomeView.swift in Sources */,
 				FE32D9752A0FCC35001C88FB /* AssetSearchView.swift in Sources */,
