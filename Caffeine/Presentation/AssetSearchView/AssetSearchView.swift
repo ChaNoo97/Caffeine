@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct AssetSearchView: View {
+    
+    @State var keyword: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer().frame(height: 50)
+            SearchBarView(keyword: $keyword)
+            
+            List {
+                Text("Hellow World")
+            }
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
+        }
     }
 }
 
 struct AssetSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        AssetSearchView()
+        AssetSearchView(keyword: "")
     }
 }
