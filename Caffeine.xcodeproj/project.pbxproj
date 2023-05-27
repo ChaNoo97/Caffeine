@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AA2A17B93700CF7172 /* SearchBarView.swift */; };
+		480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */; };
+		480C73AF2A187F6700CF7172 /* PagerTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AE2A187F6700CF7172 /* PagerTapView.swift */; };
+		48B2B6B42A1D07D00032F184 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B32A1D07D00032F184 /* EndPoint.swift */; };
+		48B2B6B62A1D098E0032F184 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B52A1D098E0032F184 /* HTTPClient.swift */; };
+		48B2B6B82A1D0D190032F184 /* CaffeineEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B72A1D0D190032F184 /* CaffeineEndPoint.swift */; };
+		48B2B6BA2A1D0E5E0032F184 /* CaffeineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B92A1D0E5E0032F184 /* CaffeineService.swift */; };
+		48B2B6BD2A1D0EA90032F184 /* CryptoResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6BC2A1D0EA90032F184 /* CryptoResModel.swift */; };
+		48B2B6C02A1FB4990032F184 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 48B2B6BF2A1FB4990032F184 /* ComposableArchitecture */; };
+		48B2B6C32A1FB5110032F184 /* AssetSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6C22A1FB5110032F184 /* AssetSearch.swift */; };
+		48B2B6C62A21A1300032F184 /* CryptoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6C52A21A1300032F184 /* CryptoList.swift */; };
+		48B2B6C82A21A9B40032F184 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6C72A21A9B40032F184 /* Crypto.swift */; };
+		48B2B6CB2A21AF5B0032F184 /* Dependency+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6CA2A21AF5B0032F184 /* Dependency+Extension.swift */; };
 		FE32D9622A0FCB76001C88FB /* CaffeineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32D9612A0FCB76001C88FB /* CaffeineApp.swift */; };
 		FE32D9642A0FCB76001C88FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32D9632A0FCB76001C88FB /* ContentView.swift */; };
 		FE32D9662A0FCB79001C88FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE32D9652A0FCB79001C88FB /* Assets.xcassets */; };
@@ -16,6 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480C73AA2A17B93700CF7172 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
+		480C73AE2A187F6700CF7172 /* PagerTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTapView.swift; sourceTree = "<group>"; };
+		48B2B6B32A1D07D00032F184 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		48B2B6B52A1D098E0032F184 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		48B2B6B72A1D0D190032F184 /* CaffeineEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineEndPoint.swift; sourceTree = "<group>"; };
+		48B2B6B92A1D0E5E0032F184 /* CaffeineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineService.swift; sourceTree = "<group>"; };
+		48B2B6BC2A1D0EA90032F184 /* CryptoResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoResModel.swift; sourceTree = "<group>"; };
+		48B2B6C22A1FB5110032F184 /* AssetSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSearch.swift; sourceTree = "<group>"; };
+		48B2B6C52A21A1300032F184 /* CryptoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoList.swift; sourceTree = "<group>"; };
+		48B2B6C72A21A9B40032F184 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		48B2B6CA2A21AF5B0032F184 /* Dependency+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependency+Extension.swift"; sourceTree = "<group>"; };
 		FE32D95E2A0FCB76001C88FB /* Caffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE32D9612A0FCB76001C88FB /* CaffeineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineApp.swift; sourceTree = "<group>"; };
 		FE32D9632A0FCB76001C88FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,12 +55,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B2B6C02A1FB4990032F184 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48B2B6B22A1D037D0032F184 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				48B2B6BB2A1D0E9A0032F184 /* Model */,
+				48B2B6B32A1D07D00032F184 /* EndPoint.swift */,
+				48B2B6B52A1D098E0032F184 /* HTTPClient.swift */,
+				48B2B6B72A1D0D190032F184 /* CaffeineEndPoint.swift */,
+				48B2B6B92A1D0E5E0032F184 /* CaffeineService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		48B2B6BB2A1D0E9A0032F184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48B2B6BC2A1D0EA90032F184 /* CryptoResModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48B2B6C12A1FB4A70032F184 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				48B2B6C22A1FB5110032F184 /* AssetSearch.swift */,
+				48B2B6CA2A21AF5B0032F184 /* Dependency+Extension.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		48B2B6C42A21A00D0032F184 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE32D9742A0FCC35001C88FB /* AssetSearchView.swift */,
+				480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */,
+				480C73AA2A17B93700CF7172 /* SearchBarView.swift */,
+				48B2B6C52A21A1300032F184 /* CryptoList.swift */,
+				480C73AE2A187F6700CF7172 /* PagerTapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48B2B6C92A21ACBA0032F184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48B2B6C72A21A9B40032F184 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FE32D9552A0FCB76001C88FB = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +167,10 @@
 		FE32D9712A0FCC0A001C88FB /* AssetSearchView */ = {
 			isa = PBXGroup;
 			children = (
-				FE32D9742A0FCC35001C88FB /* AssetSearchView.swift */,
+				48B2B6C92A21ACBA0032F184 /* Model */,
+				48B2B6C42A21A00D0032F184 /* View */,
+				48B2B6C12A1FB4A70032F184 /* Reducer */,
+				48B2B6B22A1D037D0032F184 /* Network */,
 			);
 			path = AssetSearchView;
 			sourceTree = "<group>";
@@ -113,6 +191,9 @@
 			dependencies = (
 			);
 			name = Caffeine;
+			packageProductDependencies = (
+				48B2B6BF2A1FB4990032F184 /* ComposableArchitecture */,
+			);
 			productName = Caffeine;
 			productReference = FE32D95E2A0FCB76001C88FB /* Caffeine.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +222,9 @@
 				Base,
 			);
 			mainGroup = FE32D9552A0FCB76001C88FB;
+			packageReferences = (
+				48B2B6BE2A1FB4990032F184 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FE32D95F2A0FCB76001C88FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,9 +251,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B2B6C62A21A1300032F184 /* CryptoList.swift in Sources */,
+				480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */,
+				480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */,
+				48B2B6B82A1D0D190032F184 /* CaffeineEndPoint.swift in Sources */,
+				48B2B6BD2A1D0EA90032F184 /* CryptoResModel.swift in Sources */,
+				48B2B6B42A1D07D00032F184 /* EndPoint.swift in Sources */,
 				FE32D9732A0FCC2C001C88FB /* HomeView.swift in Sources */,
 				FE32D9752A0FCC35001C88FB /* AssetSearchView.swift in Sources */,
+				48B2B6B62A1D098E0032F184 /* HTTPClient.swift in Sources */,
 				FE32D9642A0FCB76001C88FB /* ContentView.swift in Sources */,
+				48B2B6BA2A1D0E5E0032F184 /* CaffeineService.swift in Sources */,
+				48B2B6C32A1FB5110032F184 /* AssetSearch.swift in Sources */,
+				48B2B6CB2A21AF5B0032F184 /* Dependency+Extension.swift in Sources */,
+				48B2B6C82A21A9B40032F184 /* Crypto.swift in Sources */,
+				480C73AF2A187F6700CF7172 /* PagerTapView.swift in Sources */,
 				FE32D9622A0FCB76001C88FB /* CaffeineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caffeine/Preview Content\"";
-				DEVELOPMENT_TEAM = NNJ9X2K872;
+				DEVELOPMENT_TEAM = K4Z8YS9YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -329,7 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caffeine/Preview Content\"";
-				DEVELOPMENT_TEAM = NNJ9X2K872;
+				DEVELOPMENT_TEAM = K4Z8YS9YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -373,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48B2B6BE2A1FB4990032F184 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48B2B6BF2A1FB4990032F184 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48B2B6BE2A1FB4990032F184 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE32D9562A0FCB76001C88FB /* Project object */;
 }
