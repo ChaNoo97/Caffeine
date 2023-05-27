@@ -11,7 +11,11 @@ protocol CaffeineServicable {
     func getCrypto() async -> Result<[CryptoResModel], RequestError>
 }
 
-struct CaffeineService: CaffeineServicable, HTTPClient {
+class CaffeineService: CaffeineServicable, HTTPClient {
+    
+    static let shared = CaffeineService()
+    private init() {}
+    
     func getCrypto() async -> Result<[CryptoResModel], RequestError> {
         return await request(endpoint: CaffeineEndPoint.crypto, responseModel: [CryptoResModel].self)
     }

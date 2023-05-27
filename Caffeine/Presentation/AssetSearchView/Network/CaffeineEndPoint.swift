@@ -27,7 +27,7 @@ extension CaffeineEndPoint: Endpoint {
             // todo
             return ""
         case .crypto:
-            // todo
+            // 참고: https://www.coingecko.com/en/api/documentation
             return "/api/v3/coins/markets"
         }
     }

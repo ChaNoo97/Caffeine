@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CryptoResModel: Codable {
+struct CryptoResModel: Codable, Equatable {
     let id, symbol, name: String
     let image: String
     let currentPrice: Double
