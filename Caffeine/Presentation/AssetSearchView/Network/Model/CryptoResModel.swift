@@ -22,4 +22,8 @@ struct CryptoResModel: Codable, Equatable {
         case priceChangePercentage24H = "price_change_percentage_24h"
         case lastUpdated = "last_updated"
     }
+    
+    func convertToCrypto() -> Crypto {
+        return Crypto(id: id, name: name, image: image, currentPrice: currentPrice)
+    }
 }

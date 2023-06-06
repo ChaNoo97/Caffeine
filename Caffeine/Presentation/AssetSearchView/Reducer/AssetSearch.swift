@@ -31,16 +31,22 @@ struct AssetSearch: ReducerProtocol {
         case let .refreshCoinResponse(result):
             switch result {
             case .success(let response):
-                state.coinList = convertToCrypto(from: response)
+                state.coinList = response.map { $0.convertToCrypto() }
             case .failure(let failure):
                 print(failure)
+                state.coinList = getDummyCryptos()
             }
             return .none
         }
     }
     
-    // 이런 변환 과정은 어디서 해주는게 좋을까?
-    func convertToCrypto(from: [CryptoResModel]) -> [Crypto] {
-        return from.map { Crypto(id: $0.id, name: $0.name, image: $0.image, currentPrice: $0.currentPrice) }
+    func getDummyCryptos() -> [Crypto] {
+        return [
+            Crypto(id: "1", name: "비트코인", image: "", currentPrice: 20000),
+            Crypto(id: "2", name: "이더리움", image: "", currentPrice: 30000),
+            Crypto(id: "3", name: "리플", image: "", currentPrice: 40000),
+            Crypto(id: "4", name: "에이다", image: "", currentPrice: 50000),
+            Crypto(id: "5", name: "솔라나", image: "", currentPrice: 60000),
+        ]
     }
 }
