@@ -7,19 +7,39 @@
 
 import SwiftUI
 
+enum AssetSearchTab: Int {
+    case stock = 0
+    case crypto = 1
+    case realEstate = 2
+    
+    func name() -> String {
+        switch self {
+        case .stock:
+            return "stock"
+        case .crypto:
+            return "crypto"
+        case .realEstate:
+            return "realEstate"
+        }
+    }
+}
+
 struct PagerTapView<Content: View, Label: View>: View {
     
     var content: Content
     var label: Label
     var tint: Color
+    @Binding var selectedTab: AssetSearchTab
     
     init(tint: Color,
+         selected: Binding<AssetSearchTab>,
          @ViewBuilder labels: @escaping ()->Label,
          @ViewBuilder content: @escaping ()->Content
     ) {
         self.content = content()
         self.label = labels()
         self.tint = tint
+        self._selectedTab = selected
     }
     
     @State var offset: CGFloat = 0
@@ -37,8 +57,10 @@ struct PagerTapView<Content: View, Label: View>: View {
                         Rectangle()
                             .fill(Color.black.opacity(0.01))
                             .onTapGesture { // 탭 했을때 스크롤뷰 offset 변경
-                                let newOffset = CGFloat(index) * getScreenBounds().width
-                                self.offset = newOffset
+                                guard let tab = AssetSearchTab(rawValue: index) else {
+                                    return
+                                }
+                                self.selectedTab = tab
                             }
                     }
                 }
@@ -78,7 +100,13 @@ struct PagerTapView<Content: View, Label: View>: View {
                     self.tabOffset = tabOffset
                 }
             }
+        }.onChange(of: selectedTab) { currentTab in
+            self.offset = selectedTabOffset(currentTab)
         }
+    }
+    
+    func selectedTabOffset(_ tab: AssetSearchTab) -> CGFloat {
+        return CGFloat(tab.rawValue) * getScreenBounds().width
     }
 }
 
