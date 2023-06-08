@@ -13,14 +13,16 @@ struct CryptoList: View {
     var body: some View {
         List {
             ForEach(list, id: \.self) { coin in
-                HStack {
-                    AsyncImage(url: URL(string: coin.image)) { image in
-                        image.resizable()
-                    } placeholder: {
-                        ProgressView()
+                NavigationLink(destination: RegistCoinView(crypto: coin)) {
+                    HStack {
+                        AsyncImage(url: URL(string: coin.image)) { image in
+                            image.resizable()
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        .frame(width: 30, height: 30)
+                        Text("\(coin.name)")
                     }
-                    .frame(width: 30, height: 30)
-                    Text("\(coin.name)")
                 }
             }
         }
@@ -28,8 +30,8 @@ struct CryptoList: View {
     }
 }
 
-struct CryptoList_Previews: PreviewProvider {
-    static var previews: some View {
-        CryptoList(list: .constant([]))
-    }
-}
+//struct CryptoList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CryptoList(list: .constant([]))
+//    }
+//}
