@@ -14,17 +14,13 @@ struct RegistCoinView: View {
     
     var body: some View {
         VStack {
-            Text("자산 추가")
-            VStack {
-                CoinDataInputView(crypto: crypto,
-                                  amount: $amount,
-                                  avgPrice: $avgPrice)
-            }
-            .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
-            .background(.gray)
-            .cornerRadius(20)
-            .padding()
-            .frame(height: 500)
+            Spacer()
+                .frame(height: 100)
+            CoinDataInputView(crypto: crypto,
+                              amount: $amount,
+                              avgPrice: $avgPrice)
+            Spacer()
+            KeypadView()
         }
         .onAppear {
             avgPrice = crypto.currentPrice.krwFormat()
