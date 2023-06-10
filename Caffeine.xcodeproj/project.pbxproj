@@ -10,6 +10,13 @@
 		480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AA2A17B93700CF7172 /* SearchBarView.swift */; };
 		480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */; };
 		480C73AF2A187F6700CF7172 /* PagerTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C73AE2A187F6700CF7172 /* PagerTapView.swift */; };
+		483ED5162A342C9B00146D7E /* View+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483ED5152A342C9B00146D7E /* View+Extention.swift */; };
+		483ED5192A342ED500146D7E /* CoinDataInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483ED5182A342ED500146D7E /* CoinDataInputView.swift */; };
+		483ED51B2A34300300146D7E /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483ED51A2A34300300146D7E /* KeypadView.swift */; };
+		483ED51E2A34352F00146D7E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483ED51D2A34352F00146D7E /* Double+Extension.swift */; };
+		4874D05C2A261F3000DC92E0 /* RegistCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D05B2A261F3000DC92E0 /* RegistCoinView.swift */; };
+		4874D0612A262B6800DC92E0 /* DeepLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D0602A262B6800DC92E0 /* DeepLinkApp.swift */; };
+		4874D0632A262C3800DC92E0 /* AppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D0622A262C3800DC92E0 /* AppDataModel.swift */; };
 		48B2B6B42A1D07D00032F184 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B32A1D07D00032F184 /* EndPoint.swift */; };
 		48B2B6B62A1D098E0032F184 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B52A1D098E0032F184 /* HTTPClient.swift */; };
 		48B2B6B82A1D0D190032F184 /* CaffeineEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2B6B72A1D0D190032F184 /* CaffeineEndPoint.swift */; };
@@ -32,6 +39,14 @@
 		480C73AA2A17B93700CF7172 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		480C73AE2A187F6700CF7172 /* PagerTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTapView.swift; sourceTree = "<group>"; };
+		483ED5152A342C9B00146D7E /* View+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extention.swift"; sourceTree = "<group>"; };
+		483ED5182A342ED500146D7E /* CoinDataInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataInputView.swift; sourceTree = "<group>"; };
+		483ED51A2A34300300146D7E /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		483ED51D2A34352F00146D7E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		4874D05B2A261F3000DC92E0 /* RegistCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistCoinView.swift; sourceTree = "<group>"; };
+		4874D05F2A2625C300DC92E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4874D0602A262B6800DC92E0 /* DeepLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkApp.swift; sourceTree = "<group>"; };
+		4874D0622A262C3800DC92E0 /* AppDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataModel.swift; sourceTree = "<group>"; };
 		48B2B6B32A1D07D00032F184 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		48B2B6B52A1D098E0032F184 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		48B2B6B72A1D0D190032F184 /* CaffeineEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineEndPoint.swift; sourceTree = "<group>"; };
@@ -62,6 +77,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483ED5142A342C8800146D7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				483ED5152A342C9B00146D7E /* View+Extention.swift */,
+				483ED51D2A34352F00146D7E /* Double+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		483ED5172A342E8C00146D7E /* CoinRegist */ = {
+			isa = PBXGroup;
+			children = (
+				4874D05B2A261F3000DC92E0 /* RegistCoinView.swift */,
+				483ED5182A342ED500146D7E /* CoinDataInputView.swift */,
+				483ED51A2A34300300146D7E /* KeypadView.swift */,
+			);
+			path = CoinRegist;
+			sourceTree = "<group>";
+		};
+		4874D05A2A261EFD00DC92E0 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				4874D0602A262B6800DC92E0 /* DeepLinkApp.swift */,
+				4874D0622A262C3800DC92E0 /* AppDataModel.swift */,
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
 		48B2B6B22A1D037D0032F184 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +137,7 @@
 		48B2B6C42A21A00D0032F184 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				483ED5172A342E8C00146D7E /* CoinRegist */,
 				FE32D9742A0FCC35001C88FB /* AssetSearchView.swift */,
 				480C73AC2A17C23200CF7172 /* OffsetPageTabView.swift */,
 				480C73AA2A17B93700CF7172 /* SearchBarView.swift */,
@@ -130,6 +174,7 @@
 		FE32D9602A0FCB76001C88FB /* Caffeine */ = {
 			isa = PBXGroup;
 			children = (
+				4874D05F2A2625C300DC92E0 /* Info.plist */,
 				FE32D9612A0FCB76001C88FB /* CaffeineApp.swift */,
 				FE32D9702A0FCBE6001C88FB /* Presentation */,
 				FE32D9652A0FCB79001C88FB /* Assets.xcassets */,
@@ -167,6 +212,8 @@
 		FE32D9712A0FCC0A001C88FB /* AssetSearchView */ = {
 			isa = PBXGroup;
 			children = (
+				483ED5142A342C8800146D7E /* Extension */,
+				4874D05A2A261EFD00DC92E0 /* DeepLink */,
 				48B2B6C92A21ACBA0032F184 /* Model */,
 				48B2B6C42A21A00D0032F184 /* View */,
 				48B2B6C12A1FB4A70032F184 /* Reducer */,
@@ -251,6 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4874D05C2A261F3000DC92E0 /* RegistCoinView.swift in Sources */,
+				483ED5192A342ED500146D7E /* CoinDataInputView.swift in Sources */,
+				483ED51B2A34300300146D7E /* KeypadView.swift in Sources */,
 				48B2B6C62A21A1300032F184 /* CryptoList.swift in Sources */,
 				480C73AD2A17C23200CF7172 /* OffsetPageTabView.swift in Sources */,
 				480C73AB2A17B93700CF7172 /* SearchBarView.swift in Sources */,
@@ -258,11 +308,15 @@
 				48B2B6BD2A1D0EA90032F184 /* CryptoResModel.swift in Sources */,
 				48B2B6B42A1D07D00032F184 /* EndPoint.swift in Sources */,
 				FE32D9732A0FCC2C001C88FB /* HomeView.swift in Sources */,
+				4874D0632A262C3800DC92E0 /* AppDataModel.swift in Sources */,
 				FE32D9752A0FCC35001C88FB /* AssetSearchView.swift in Sources */,
 				48B2B6B62A1D098E0032F184 /* HTTPClient.swift in Sources */,
 				FE32D9642A0FCB76001C88FB /* ContentView.swift in Sources */,
 				48B2B6BA2A1D0E5E0032F184 /* CaffeineService.swift in Sources */,
+				483ED51E2A34352F00146D7E /* Double+Extension.swift in Sources */,
 				48B2B6C32A1FB5110032F184 /* AssetSearch.swift in Sources */,
+				4874D0612A262B6800DC92E0 /* DeepLinkApp.swift in Sources */,
+				483ED5162A342C9B00146D7E /* View+Extention.swift in Sources */,
 				48B2B6CB2A21AF5B0032F184 /* Dependency+Extension.swift in Sources */,
 				48B2B6C82A21A9B40032F184 /* Crypto.swift in Sources */,
 				480C73AF2A187F6700CF7172 /* PagerTapView.swift in Sources */,
@@ -398,6 +452,7 @@
 				DEVELOPMENT_TEAM = K4Z8YS9YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Caffeine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +483,7 @@
 				DEVELOPMENT_TEAM = K4Z8YS9YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Caffeine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
