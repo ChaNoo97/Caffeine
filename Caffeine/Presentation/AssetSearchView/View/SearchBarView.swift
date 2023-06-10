@@ -20,7 +20,7 @@ struct SearchBarView: View {
                 .cornerRadius(20)
                 .padding(.leading)
             Button {
-                print("취소")
+                keyword = ""
             } label: {
                 Image(systemName: "xmark")
                     .foregroundColor(.gray)

@@ -57,6 +57,13 @@ struct AssetSearchView: View {
                 .onChange(of: viewStore.state.coinList) { list in
                     coinList = list
                 }
+                .onChange(of: keyword) { keyword in
+                    if keyword.isEmpty {
+                        coinList = viewStore.state.coinList
+                    } else {
+                        coinList = viewStore.state.coinList.filter { $0.name.contains(keyword) }
+                    }
+                }
             }
         }
         
