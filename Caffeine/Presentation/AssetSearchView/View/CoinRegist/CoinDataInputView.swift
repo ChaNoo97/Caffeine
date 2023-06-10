@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+enum CoinInputFieldType {
+    case avgPrice
+    case amount
+    case none
+}
+
 struct CoinDataInputView: View {
     
     var crypto: Crypto
     @Binding var amount: String
     @Binding var avgPrice: String
+    @Binding var selectedField: CoinInputFieldType
     
     var body: some View {
         VStack {
@@ -34,6 +41,9 @@ struct CoinDataInputView: View {
                         })
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(.white)
+                        .onTapGesture {
+                            selectedField = .amount
+                        }
                     Text("개")
                         .foregroundColor(.white)
                         .font(.system(size: 12))
@@ -55,6 +65,9 @@ struct CoinDataInputView: View {
                         })
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(.white)
+                        .onTapGesture {
+                            selectedField = .avgPrice
+                        }
                     Text("원")
                         .foregroundColor(.white)
                         .font(.system(size: 12))
@@ -70,6 +83,6 @@ struct CoinDataInputView: View {
 
 struct CoinDataInputView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinDataInputView(crypto: Crypto(id: "", name: "bitcoin", image: "", currentPrice: 2000), amount: .constant("10"), avgPrice: .constant("3100000"))
+        CoinDataInputView(crypto: Crypto(id: "", name: "bitcoin", image: "", currentPrice: 2000), amount: .constant("10"), avgPrice: .constant("3100000"), selectedField: .constant(.none))
     }
 }

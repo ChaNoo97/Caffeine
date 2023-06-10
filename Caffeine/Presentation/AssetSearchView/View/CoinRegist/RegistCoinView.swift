@@ -11,6 +11,8 @@ struct RegistCoinView: View {
     let crypto: Crypto
     @State var amount: String = ""
     @State var avgPrice: String = ""
+    @State var selectedField: CoinInputFieldType = .none
+    @State var keypadValue: String = ""
     
     var body: some View {
         VStack {
@@ -18,12 +20,35 @@ struct RegistCoinView: View {
                 .frame(height: 100)
             CoinDataInputView(crypto: crypto,
                               amount: $amount,
-                              avgPrice: $avgPrice)
+                              avgPrice: $avgPrice,
+                              selectedField: $selectedField)
             Spacer()
-            KeypadView()
+            KeypadView(value: $keypadValue, selectedField: $selectedField)
         }
+        .onChange(of: selectedField, perform: { field in
+            // 선택 필드가 달라질때마다 keypad의 데이터 교체
+            switch field {
+            case .amount:
+                keypadValue = amount
+            case .avgPrice:
+                keypadValue = avgPrice
+            case .none:
+                break
+            }
+        })
+        .onChange(of: keypadValue, perform: { value in
+            // 키패드 입력 데이터 반영
+            switch selectedField {
+            case .amount:
+                amount = value
+            case .avgPrice:
+                avgPrice = value
+            case .none:
+                break
+            }
+        })
         .onAppear {
-            avgPrice = crypto.currentPrice.krwFormat()
+            avgPrice = "\(crypto.currentPrice)"
         }
     }
     
